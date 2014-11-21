@@ -10,7 +10,7 @@ Two modules are included:
 
 2) A minimum GUI based on Tk. The color style is referred to <a href="https://github.com/gabrielecirulli/2048">gabrielecirulli/2048</a></p>.
 
-Screenshot:
+#Screenshot:
 ![](https://github.com/frombeijingwithlove/mini2048/blob/master/Screenshot.png)
 
 If you can read Chinese you may find a doc in with more details here:
