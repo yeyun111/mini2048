@@ -15,3 +15,6 @@ Two modules are included:
 
 If you can read Chinese you may find a doc in with more details here:
 http://www.cnblogs.com/frombeijingwithlove/p/4111016.html
+
+========
+Actually the game module was for a verification frame of a 2048 AI project. If I get enough free time I may finish it based on this.
