@@ -13,5 +13,5 @@ Two modules are included:
 #Screenshot:
 ![](https://github.com/frombeijingwithlove/mini2048/blob/master/Screenshot.png)
 
-If you can read Chinese you may find a doc in with more details here:
+If you can read Chinese you may find more details here:
 http://www.cnblogs.com/frombeijingwithlove/p/4111016.html
