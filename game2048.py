@@ -23,7 +23,7 @@ class Game2048:
             self._grid[avail] = new_tiles
 
     def step(self, direction):
-        self._grid[self._grid%10==0] /= 10
+        self._grid[self._grid%10==0] //= 10
         merge_v, merge_h, grid_copy = copy(self._grid), copy(rot90(self._grid)), copy(self._grid)
         map(Game2048._merge_down, [merge_v, merge_h])       # try to merge tiles along two directions
         if merge_v[isnan(merge_v)].size is 0 and merge_h[isnan(merge_h)].size is 0:         # Check if game is over
@@ -41,7 +41,7 @@ class Game2048:
 
     def get_grid(self):
         grid = copy(self._grid)
-        grid[grid%10==0] /= 10
+        grid[grid%10==0] //= 10
         return grid
 
     def get_new_tiles(self):
@@ -51,3 +51,4 @@ class Game2048:
 
     def get_score(self):
         return self._score
+

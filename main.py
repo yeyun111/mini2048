@@ -1,5 +1,5 @@
-from Tkinter import Tk, Label, Frame, BOTH
-from tkFont import Font
+from tkinter import Tk, Label, Frame, BOTH
+from tkinter.font import Font
 from game2048 import Game2048, UP, DOWN, LEFT, RIGHT, ndenumerate, copy, isnan
 
 key_map = {'Up': UP, 'Down': DOWN, 'Left': LEFT, 'Right': RIGHT}
@@ -33,10 +33,10 @@ if __name__ == '__main__':
 
     grid, labels = game.get_grid(), []
     for (i, j), value in ndenumerate(grid):
-        frame = Frame(root, width=window_size/4-2, height=window_size/4-2)
-        font = Font(family='Helvetica', weight='bold', size=window_size/15)
+        frame = Frame(root, width=window_size//4-2, height=window_size//4-2)
+        font = Font(family='Helvetica', weight='bold', size=window_size//15)
         frame.pack_propagate(0)
-        frame.place(x=j*window_size/4+1, y=i*window_size/4+1)
+        frame.place(x=j*window_size//4+1, y=i*window_size//4+1)
         (text, color) = ('', color_map['base']) if isnan(value) else ('{}'.format(int(value)), color_map[value][0])
         label = Label(frame, text=text, font=font, fg=color, bg=color_map['base'] if isnan(value) else color_map[value][1])
         label.pack(fill=BOTH, expand=True)
